@@ -9,7 +9,7 @@ log "\n\nINITIATING SCALA IDE RUN FROM DOWNLOAD #{node['df_scala_ide']['source']
     level :info
 end
 
-template '/home/vagrant/README_SCALA IDE.txt' do 
+template '/home/vagrant/README_SCALA_IDE.txt' do 
   source 'README_SCALA_IDE.txt.erb'
   mode "0644"
   only_if { ::File.exists?('/home/vagrant') }
